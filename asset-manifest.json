@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/insure-al/static/css/main.5f361e03.chunk.css",
+    "main.js": "/insure-al/static/js/main.d1cd1416.chunk.js",
+    "main.js.map": "/insure-al/static/js/main.d1cd1416.chunk.js.map",
+    "runtime-main.js": "/insure-al/static/js/runtime-main.21c5ab1a.js",
+    "runtime-main.js.map": "/insure-al/static/js/runtime-main.21c5ab1a.js.map",
+    "static/js/2.49689844.chunk.js": "/insure-al/static/js/2.49689844.chunk.js",
+    "static/js/2.49689844.chunk.js.map": "/insure-al/static/js/2.49689844.chunk.js.map",
+    "index.html": "/insure-al/index.html",
+    "precache-manifest.ad3a47e061d1230a2af7422e21d89815.js": "/insure-al/precache-manifest.ad3a47e061d1230a2af7422e21d89815.js",
+    "service-worker.js": "/insure-al/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/insure-al/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.49689844.chunk.js.LICENSE.txt": "/insure-al/static/js/2.49689844.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/insure-al/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21c5ab1a.js",
+    "static/js/2.49689844.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d1cd1416.chunk.js"
+  ]
+}
