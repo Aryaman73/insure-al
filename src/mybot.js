@@ -44,7 +44,7 @@ class Review extends Component {
     else if ( (typeRoof.value != 1) && (heatSource.value != 1) && (roofDateReplace.value <= 10) )  {
       return (
         <div> 
-          <h3> NOT IN DEMO Your Report: </h3>
+          <h3> Your Report: </h3>
           <p> Your Estimated Annual Insurance Cost: $912</p>
           <p> Here are some suggestions to decrease your insurance premiums: </p>
           <p> 1. Change your roof from {typeRoof.label} to Metal or Copper Tiles </p>
@@ -56,7 +56,7 @@ class Review extends Component {
     else if ( (typeRoof.value != 1) && (heatSource.value == 1) && (roofDateReplace.value <= 10) )  {
       return (
         <div> 
-          <h3> NOT IN DEMO Your Report: </h3>
+          <h3> Your Report: </h3>
           <p> Your Estimated Annual Insurance Cost: $851</p>
           <p> Here are some suggestions to decrease your insurance premiums: </p>
           <p> 1. Change your roof from {typeRoof.label} to Metal or Copper Tiles </p>
