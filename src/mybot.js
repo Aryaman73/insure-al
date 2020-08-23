@@ -34,6 +34,7 @@ class Review extends Component {
         </div>
       );
     } else {
+<<<<<<< HEAD
       return (
         <div>
           {" "}
@@ -42,6 +43,10 @@ class Review extends Component {
         </div>
       );
     }
+=======
+      return ( <div> Your house was built before 2000, and thus, your insurance premium ranges from $500 to $700</div> );
+    } 
+>>>>>>> 1939bc4b06b37e4a9cf3942e0bff6713f282b72a
   }
 }
 

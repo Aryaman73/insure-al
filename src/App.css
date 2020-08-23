@@ -7,14 +7,8 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +16,46 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  -webkit-animation: 9999999s backgroundScroll infinite linear;
+  -moz-animation: 9999999s backgroundScroll infinite linear;
+  -o-animation: 9999999s backgroundScroll infinite linear;
+  -ms-animation: 9999999s backgroundScroll infinite linear;
+  animation: 9999999s backgroundScroll infinite linear;
+  z-index: -1;
+  background-image: url("WebsiteWallpaper.png");
+}
+
+@-webkit-keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -99999999px 0;
+  }
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -99999999px 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-link {
