@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import ChatBot from "react-simple-chatbot";
 
 import { Container, Row, Col } from "react-bootstrap";
+import { ThemeProvider } from "styled-components";
 
 class Review extends Component {
   constructor(props) {
@@ -84,10 +85,22 @@ Review.defaultProps = {
   steps: PropTypes.object,
 };
 
+const theme = {
+  background: '#f5f8fb',
+  fontFamily: 'Arial',
+  headerBgColor: '#EF6C00',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+  botBubbleColor: '#EF6C00',
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#4a4a4a',
+};
+
 function mybot() {
   return (
+    <ThemeProvider theme={theme}>
     <ChatBot
-      botAvatar={{src:"./person.png"}}
       style={{ width: "80vw", height: "40vw"}}
       contentStyle={{ height: "32vw" }}
       botDelay={500}
@@ -323,6 +336,7 @@ function mybot() {
         
       ]}
     />
+    </ThemeProvider>
   );
 }
 
