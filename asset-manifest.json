@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/insure-al/static/css/main.dece9e31.chunk.css",
-    "main.js": "/insure-al/static/js/main.6af30284.chunk.js",
-    "main.js.map": "/insure-al/static/js/main.6af30284.chunk.js.map",
+    "main.js": "/insure-al/static/js/main.a8c6a6fc.chunk.js",
+    "main.js.map": "/insure-al/static/js/main.a8c6a6fc.chunk.js.map",
     "runtime-main.js": "/insure-al/static/js/runtime-main.21c5ab1a.js",
     "runtime-main.js.map": "/insure-al/static/js/runtime-main.21c5ab1a.js.map",
     "static/js/2.93ce5eb7.chunk.js": "/insure-al/static/js/2.93ce5eb7.chunk.js",
     "static/js/2.93ce5eb7.chunk.js.map": "/insure-al/static/js/2.93ce5eb7.chunk.js.map",
     "index.html": "/insure-al/index.html",
-    "precache-manifest.d8b83877c5f4b109fd7c1a3118af01df.js": "/insure-al/precache-manifest.d8b83877c5f4b109fd7c1a3118af01df.js",
+    "precache-manifest.72f28e41f8eff895734f78ae8d9ec19f.js": "/insure-al/precache-manifest.72f28e41f8eff895734f78ae8d9ec19f.js",
     "service-worker.js": "/insure-al/service-worker.js",
     "static/css/main.dece9e31.chunk.css.map": "/insure-al/static/css/main.dece9e31.chunk.css.map",
     "static/js/2.93ce5eb7.chunk.js.LICENSE.txt": "/insure-al/static/js/2.93ce5eb7.chunk.js.LICENSE.txt",
     "static/media/App.css": "/insure-al/static/media/WebsiteWallpaper.7bbe41a7.png",
-    "static/media/logo.svg": "/insure-al/static/media/logo.5d5d9eef.svg"
+    "static/media/logo.svg": "/insure-al/static/media/logo.5d5d9eef.svg",
+    "static/media/sample_graph.png": "/insure-al/static/media/sample_graph.4b1e9c5f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.21c5ab1a.js",
     "static/js/2.93ce5eb7.chunk.js",
     "static/css/main.dece9e31.chunk.css",
-    "static/js/main.6af30284.chunk.js"
+    "static/js/main.a8c6a6fc.chunk.js"
   ]
 }

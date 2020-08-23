@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8b325ddf61b3a29fce617ab60561b60",
+    "revision": "37a4b43f627739213f71a9e9e9c164f0",
     "url": "/insure-al/index.html"
   },
   {
-    "revision": "219a3adbe98055b1c810",
+    "revision": "f54f7ab4e2d9ea17a6fc",
     "url": "/insure-al/static/css/main.dece9e31.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insure-al/static/js/2.93ce5eb7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "219a3adbe98055b1c810",
-    "url": "/insure-al/static/js/main.6af30284.chunk.js"
+    "revision": "f54f7ab4e2d9ea17a6fc",
+    "url": "/insure-al/static/js/main.a8c6a6fc.chunk.js"
   },
   {
     "revision": "5d8176facf443914fccb",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/insure-al/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "4b1e9c5fbcc7789691b1276c2af4893f",
+    "url": "/insure-al/static/media/sample_graph.4b1e9c5f.png"
   }
 ]);
