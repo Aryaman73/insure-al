@@ -25,11 +25,11 @@
   height: 100%;
   background-size: cover;
   position: absolute;
-  -webkit-animation: 9999999s backgroundScroll infinite linear;
-  -moz-animation: 9999999s backgroundScroll infinite linear;
-  -o-animation: 9999999s backgroundScroll infinite linear;
-  -ms-animation: 9999999s backgroundScroll infinite linear;
-  animation: 9999999s backgroundScroll infinite linear;
+  -webkit-animation: 1000000s backgroundScroll infinite linear;
+  -moz-animation: 10000000s backgroundScroll infinite linear;
+  -o-animation: 10000000s backgroundScroll infinite linear;
+  -ms-animation: 10000000s backgroundScroll infinite linear;
+  animation: 10000000s backgroundScroll infinite linear;
   z-index: -1;
   background-image: url("WebsiteWallpaper.png");
 }
@@ -69,4 +69,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#mainTitle {
+  background-color: rgba(92, 12, 55, 0.7);
+  padding: 15px 15px 15px 15px;
 }

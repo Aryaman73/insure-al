@@ -12,10 +12,10 @@ function App() {
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <div>
+            <h3 id="mainTitle">   Hey! This is Insure-Al, your friendly Insurance Advisor!    </h3>
+          </div>
           <Chatbot />
-          <p>
-            Hey! This is Insure-Al, your friendly Insurance Advisor! 
-          </p>
         </header>
       </div>
       </div>
