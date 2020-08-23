@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/insure-al/static/css/main.dece9e31.chunk.css",
-    "main.js": "/insure-al/static/js/main.865602a9.chunk.js",
-    "main.js.map": "/insure-al/static/js/main.865602a9.chunk.js.map",
-    "runtime-main.js": "/insure-al/static/js/runtime-main.21c5ab1a.js",
-    "runtime-main.js.map": "/insure-al/static/js/runtime-main.21c5ab1a.js.map",
-    "static/js/2.93ce5eb7.chunk.js": "/insure-al/static/js/2.93ce5eb7.chunk.js",
-    "static/js/2.93ce5eb7.chunk.js.map": "/insure-al/static/js/2.93ce5eb7.chunk.js.map",
-    "index.html": "/insure-al/index.html",
-    "precache-manifest.3a4b9ce51ffa945d3412a66d25c40b40.js": "/insure-al/precache-manifest.3a4b9ce51ffa945d3412a66d25c40b40.js",
-    "service-worker.js": "/insure-al/service-worker.js",
-    "static/css/main.dece9e31.chunk.css.map": "/insure-al/static/css/main.dece9e31.chunk.css.map",
-    "static/js/2.93ce5eb7.chunk.js.LICENSE.txt": "/insure-al/static/js/2.93ce5eb7.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/insure-al/static/media/WebsiteWallpaper.7bbe41a7.png",
-    "static/media/logo.svg": "/insure-al/static/media/logo.5d5d9eef.svg",
-    "static/media/sample_graph.png": "/insure-al/static/media/sample_graph.4b1e9c5f.png"
+    "main.css": "/insur-ai.tech/insure-al/static/css/main.c04d44a9.chunk.css",
+    "main.js": "/insur-ai.tech/insure-al/static/js/main.dcffd166.chunk.js",
+    "main.js.map": "/insur-ai.tech/insure-al/static/js/main.dcffd166.chunk.js.map",
+    "runtime-main.js": "/insur-ai.tech/insure-al/static/js/runtime-main.d05ed8c4.js",
+    "runtime-main.js.map": "/insur-ai.tech/insure-al/static/js/runtime-main.d05ed8c4.js.map",
+    "static/js/2.bf0ddfe0.chunk.js": "/insur-ai.tech/insure-al/static/js/2.bf0ddfe0.chunk.js",
+    "static/js/2.bf0ddfe0.chunk.js.map": "/insur-ai.tech/insure-al/static/js/2.bf0ddfe0.chunk.js.map",
+    "index.html": "/insur-ai.tech/insure-al/index.html",
+    "precache-manifest.061c85cc515eaf4dafe299fb42c91c90.js": "/insur-ai.tech/insure-al/precache-manifest.061c85cc515eaf4dafe299fb42c91c90.js",
+    "service-worker.js": "/insur-ai.tech/insure-al/service-worker.js",
+    "static/css/main.c04d44a9.chunk.css.map": "/insur-ai.tech/insure-al/static/css/main.c04d44a9.chunk.css.map",
+    "static/js/2.bf0ddfe0.chunk.js.LICENSE.txt": "/insur-ai.tech/insure-al/static/js/2.bf0ddfe0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/insur-ai.tech/insure-al/static/media/WebsiteWallpaper.7bbe41a7.png",
+    "static/media/logo.svg": "/insur-ai.tech/insure-al/static/media/logo.5d5d9eef.svg",
+    "static/media/sample_graph.png": "/insur-ai.tech/insure-al/static/media/sample_graph.4b1e9c5f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.21c5ab1a.js",
-    "static/js/2.93ce5eb7.chunk.js",
-    "static/css/main.dece9e31.chunk.css",
-    "static/js/main.865602a9.chunk.js"
+    "static/js/runtime-main.d05ed8c4.js",
+    "static/js/2.bf0ddfe0.chunk.js",
+    "static/css/main.c04d44a9.chunk.css",
+    "static/js/main.dcffd166.chunk.js"
   ]
 }
