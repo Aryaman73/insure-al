@@ -1,3 +1,17 @@
+if (yearHouseBuilt.value > 2000) {
+      return (
+        <div>
+          {" "}
+          Your house was built after 2000 (i.e. the year {yearHouseBuilt.value}
+          ), and thus your insurance premium is quite low!{" "}
+        </div>
+      );
+    } else {
+      return ( <div> Your house was built before 2000, and thus, your insurance premium ranges from $500 to $700</div> );
+    } 
+
+
+
 #wrapper {
   height: 100%;
   left: 0;

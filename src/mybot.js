@@ -13,31 +13,68 @@ class Review extends Component {
       address: this.props.steps.address || "",
       yearsAtResidence: this.props.steps.yearsAtResidence || "",
       yearHouseBuilt: this.props.steps.yearHouseBuilt || "",
+      typeRoof: this.props.steps.typeRoof || "",
+      roofDateReplace: this.props.steps.roofDateReplace || "",
+      homeStories: this.props.steps.homeStories || "",
+      basementBool: this.props.steps.basementBool || "",
+      heatSource: this.props.steps.heatSource || "",
+      pdl: this.props.steps.pdl || "",
+      fdl: this.props.steps.fdl || "",
     };
   }
 
-  // componentWillMount() {
-  //   const { steps } = this.props;
-  //   const { name, policy, age } = steps;
-
-  //   this.setState({ name, policy, age });
-  // }
-
   render() {
-    const { name, address, yearsAtResidence, yearHouseBuilt } = this.state;
-    if (yearHouseBuilt.value > 2000) {
+    const { name, address, yearsAtResidence, yearHouseBuilt, typeRoof, roofDateReplace, homeStories,
+      basementBool, heatSource, pdl, fdl } = this.state;
+
+    //All Suggestions
+    if ( (typeRoof.value != 1) && (typeRoof.value != 5) && (heatSource.value != 1) && (roofDateReplace.value > 10) )  {
       return (
-        <div>
-          {" "}
-          Your house was built after 2000 (i.e. the year {yearHouseBuilt.value}
-          ), and thus your insurance premium is quite low!{" "}
-        </div>
-      );
-    } else {
-      return ( <div> Your house was built before 2000, and thus, your insurance premium ranges from $500 to $700</div> );
+        <div> 
+          <h3> Your Report: </h3>
+          <p> Your Estimated Annual Insurance Cost: $851</p>
+          <p> Here are some suggestions to decrease your insurance premiums: </p>
+          <p> 1. Change your roof from {typeRoof.label} to Metal or Copper Tiles </p>
+          <p> 2. Your roofing is {roofDateReplace.value} years old! Ideally, it should be replaced every 10 years. </p>
+          <p> 3. You should think about switching from {heatSource.label} to Gas Furnaces! </p>
+        </div>    
+      );  
     } 
+    //No roof replace
+    else if ( (typeRoof.value != 1) && (typeRoof.value != 5) && (heatSource.value != 1) && (roofDateReplace.value <= 10) )  {
+      return (
+        <div> 
+          <h3> Your Report: </h3>
+          <p> Your Estimated Annual Insurance Cost: $912</p>
+          <p> Here are some suggestions to decrease your insurance premiums: </p>
+          <p> 1. Change your roof from {typeRoof.label} to Metal or Copper Tiles </p>
+          <p> 2. You should think about switching from {heatSource.label} to Gas Furnaces! </p>
+        </div>    
+      );  
+    }
+    //Only change type of roof
+    else if ( (typeRoof.value != 1) && (typeRoof.value != 5) && (heatSource.value == 1) && (roofDateReplace.value <= 10) )  {
+      return (
+        <div> 
+          <h3> Your Report: </h3>
+          <p> Your Estimated Annual Insurance Cost: $851</p>
+          <p> Here are some suggestions to decrease your insurance premiums: </p>
+          <p> 1. Change your roof from {typeRoof.label} to Metal or Copper Tiles </p>
+        </div>    
+      );  
+    } 
+    else {
+      return (
+        <div> 
+          <h3> Your Report: </h3>
+          <p> Your Estimated Annual Insurance Cost: $812</p>
+          <p> We don't have any suggestions for you! Your Insurance Premium is close to as low as it can be. </p>
+        </div>    
+      ); 
+    }
+    }
   }
-}
+
 
 Review.propTypes = {
   steps: PropTypes.object,
@@ -50,8 +87,10 @@ Review.defaultProps = {
 function mybot() {
   return (
     <ChatBot
-      style={{ width: "80vw", height: "40vw" }}
+      botAvatar={{src:"./person.png"}}
+      style={{ width: "80vw", height: "40vw"}}
       contentStyle={{ height: "32vw" }}
+      botDelay={500}
       steps={[
         {
           id: "1",
@@ -112,15 +151,15 @@ function mybot() {
         {
           id: "typeRoof",
           options: [
-            { value: "Aluminum", label: "Aluminum", trigger: "6" },
+            { value: "1", label: "Aluminum", trigger: "6" },
             {
-              value: "Asphalt Shingles",
+              value: "2",
               label: "Asphalt Shingles",
               trigger: "6",
             },
-            { value: "Clay Tile", label: "Clay Tile", trigger: "6" },
-            { value: "Wood Tile", label: "Wood Tile", trigger: "6" },
-            { value: "Metal", label: "Metal", trigger: "6" },
+            { value: "3", label: "Clay Tile", trigger: "6" },
+            { value: "4", label: "Wood Tile", trigger: "6" },
+            { value: "5", label: "Metal", trigger: "6" },
           ],
         },
         {
@@ -165,29 +204,123 @@ function mybot() {
           id: "heatSource",
           options: [
             {
-              value: "Central Furnace – Gas",
+              value: "1",
               label: "Central Furnace – Gas",
               trigger: "10",
             },
             {
-              value: "Central Furnace – Oil",
+              value: "2",
               label: "Central Furnace – Oil",
               trigger: "10",
             },
             {
-              value: "Central Furnace – Wood",
+              value: "3",
               label: "Central Furnace – Wood",
               trigger: "10",
             },
-            { value: "Electric", label: "Electric", trigger: "10" },
-            { value: "Solar", label: "Solar", trigger: "10" },
+            { value: "4", label: "Electric", trigger: "10" },
+            { value: "5", label: "Solar", trigger: "10" },
           ],
         },
         {
           id: "10",
-          message: "End!",
-          end: true,
+          message: "Great! Now, let's talk about what kind of insurance coverage you're looking for: ",
+          trigger: "11",
+        },
+        {
+          id: "11",
+          message: "Are you interested in Property Damage Liability? How much coverage do you require?",
+          trigger:"11options",
+        },
+        {
+          id: "11options",
+          options: [
+            {
+              value: "Yes",
+              label: "Yes",
+              trigger: "pdl",
+            },
+            {
+              value: "No",
+              label: "No",
+              trigger: "12",
+            }
+          ],
+        },
+        {
+          id:"pdl",
+          options: [
+            {
+              value: "$1,000,000",
+              label: "$1,000,000",
+              trigger: "12",
+            },
+            {
+              value: "$2,000,000",
+              label: "$2,000,000",
+              trigger: "12",
+            },
+            {
+              value: "$3,000,000",
+              label: "$3,000,000",
+              trigger: "12",
+            },
+          ]
+        },
+        {
+          id:"12",
+          message: "Are you interested in Flooding Damage Liability? How much coverage do you require?",
+          trigger: "12options",
+        },
+        {
+          id:"12options",
+          options: [
+            {
+              value: "Yes",
+              label: "Yes",
+              trigger: "fdl",
+            },
+            {
+              value: "No",
+              label: "No",
+              trigger: "13",
+            }
+          ],
+        },
+        {
+          id:"fdl",
+          options: [
+            {
+              value: "$100,000",
+              label: "$100,000",
+              trigger: "13",
+            },
+            {
+              value: "$200,000",
+              label: "$200,000",
+              trigger: "13",
+            },
+            {
+              value: "$300,000",
+              label: "$300,000",
+              trigger: "13",
+            },
+          ]
+        },
+        {
+          id:"13",
+          message: "All right, I have all of the information I need! Let me see what I can do for you...",
+          trigger: "14",
+        },
+        {
+          id:"14",
+          component:<Review />,
+          asMessage: true,
+          end:true,
         }
+
+
+        
       ]}
     />
   );
