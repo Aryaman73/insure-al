@@ -106,7 +106,7 @@ function mybot() {
       steps={[
         {
           id: "1",
-          message: "Hello! My name is Insur-Al, and I am here to help you with a free instant home insurance estimate. To get started, what is your name?",
+          message: "Hello! My name is Insur-Al, and I'm here to help you with a free instant home insurance estimate. To get started, what is your name?",
           trigger: "name",
         },
         {
